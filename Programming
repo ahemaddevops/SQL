@@ -1,0 +1,13 @@
+SQL --> Structured Query Language
+Data Types:
+1. Char
+2. Varchar2
+3. Date
+4. Number
+5. Long
+6. Raw
+7. Long Raw
+8. LOB
+9. CLOB
+10. BLOB
+11. BFILE
