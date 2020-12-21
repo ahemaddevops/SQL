@@ -11,3 +11,54 @@ Data Types:
 9. CLOB
 10. BLOB
 11. BFILE
+
+The first 4 data types are very important and regularly used ones.
+
+Char Data type:
+Char data type is used when fixed length character string is required.
+It can store alphanumeric values.
+The maximum size of char data type is 2000 bytes.
+Data should enter in single quotes.
+If the user enters a value shorter than the specified length then the database adds blank-pads to the fixed length.
+In case, if the user enters a value larger than the specified length then the database would return an error.
+
+Varchar2 Data type:
+The varchar2 data type supports a variable length character string.
+It also stores alphanumeric values.
+The maximum size of char data type is 4000 bytes.
+Data should enter in single quotes.
+It occupies only that space for which the data is supplied.
+Using varchar2 saves disk space when compared to char.
+In case, if the user enters a value larger than the specified length then the database would return an error.
+
+Number Data type:
+It stores zero, positive and negative fixed and floating point numbers.
+The general declaration is
+Number (P, S)
+P -> It specifies the precision, i.e., the total number of digits (1 to 38).
+S -> It specifies the scale, i.e., the number of digits to the right of the decimal point, can range from -84 to 127.
+
+Date Data type:
+It is used to store DATE and TIME information.
+It allocates fixed length of 7 bytes each for century, year, month, day, hour, minute and second.
+The default date format is “dd-mon-yy” or “dd-mon-yyyy”.
+The date range provided by oracle is January 1, 4712 BC to December 31, 4712 AD.
+
+Timestamp Data type:
+It is an extension of the DATE data type.
+It stores the data in the form of century, year, month, date, hour, minute and second.
+
+Long data type:
+This data type stores variable length character strings.
+It is used to store very lengthy text strings.
+The maximum size is 2 GB.
+The length of long values may be limited by the memory available on the computer.
+
+Note: 
+-> A single table can contain only one long column.
+-> Objects types cannot be created on long column Attribute.
+-> Long columns cannot appear in where clauses or in Integrity constraints.
+-> Indexes cannot be created on long columns.
+-> Long can be Returned through a function, but not through a stored procedure.
+-> Stored procedures cannot accept long data as arguments.
+-> It can be declared in a Pl/Sql unit but cannot be referenced in SQL.
