@@ -84,3 +84,24 @@ ALTER TABLE - modifies a table
 DROP TABLE - deletes a table
 CREATE INDEX - creates an index (search key)
 DROP INDEX - deletes an index
+
+DRL (Data Retrieval Language):
+SELECT
+DDL (Data Definition Language):
+CREATE
+ALTER
+DROP
+TRUNCATE
+RENAME
+DML (Data Manipulation Language):
+INSERT
+DELETE
+UPDATE
+MERGE
+TCL (Transaction Control Language):
+COMMIT
+ROLLBACK
+SAVEPOINT
+DCL (Data Control Language):
+GRANT
+REVOKE
