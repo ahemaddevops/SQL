@@ -105,3 +105,32 @@ SAVEPOINT
 DCL (Data Control Language):
 GRANT
 REVOKE
+
+SUM()
+MIN()
+MAX()
+COUNT()
+AVG()
+LTRIM()
+LOWER()
+UPPER()
+REVERSE()
+SUBSTRING()
+ORDER BY:
+SELECT column_name
+FROM table_name
+ORDER BY column_name ASC|DESC;
+
+GROUP BY:
+SELECT column_name
+FROM table_name
+WHERE condition
+GROUP BY column_name
+
+HAVING:
+SELECT column_name
+FROM table_name
+WHERE condition
+GROUP BY column_name
+HAVING condition
+ORDER BY column_name
