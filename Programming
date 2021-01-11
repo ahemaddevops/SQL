@@ -134,3 +134,11 @@ WHERE condition
 GROUP BY column_name
 HAVING condition
 ORDER BY column_name
+
+JOINS:
+INNER JOIN:
+SELECT columns
+FROM table1
+INNER JOIN table2
+ON table1.column_x=table2.column_y;
+
