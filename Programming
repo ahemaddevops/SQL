@@ -201,3 +201,12 @@ Creates another table using the above details of table
 
 DROP View:
 DROP View_name
+
+ALTER:
+ALTER TABLE table_name
+ADD column_name datatype(ex: varchar, date, etc.);
+Create an extra column into the table
+
+ALTER TABLE table_name
+DROP column column_name;
+Delete an column in the table
