@@ -210,3 +210,14 @@ Create an extra column into the table
 ALTER TABLE table_name
 DROP column column_name;
 Delete an column in the table
+
+MERGE [Target] AS T
+USING [Source] AS S
+ON [Join Condition]
+WHEN MATCHED
+THEN [Update Statement]
+WHEN NOT MATCHED BY TARGET
+THEN [Insert Statement]
+WHEN NOT MATCHED BY SOURCE
+THEN [Delete Statement];
+Merges the Tables with the required data from the Source to Target 
