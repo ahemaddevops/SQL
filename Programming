@@ -154,7 +154,14 @@ FROM table1
 FULL JOIN table2
 ON table1.column_x=table2.column_y;
 
-UPDATE JOIN FUNCTION:
+UPDATE JOIN:
+SELECT columns
+SET Condition
+FROM table1
+JOIN table2 on table1.column_x=table2.column_y
+WHERE condition;
+
+DELETE JOIN:
 SELECT columns
 SET Condition
 FROM table1
