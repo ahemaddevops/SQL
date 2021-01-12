@@ -241,3 +241,22 @@ end
 IIF Function:
 select columns iif(boolean_expression, true_value, false_value)
 Ex: select e_name,e_age iif(e_age>30,'Old Age','Young Age') as emp_status from table;
+
+STORED PROCEDURE:
+CREATE PROCEDURE procedure_name
+AS
+sql statement (ex. select * from table_name)
+GO;
+exec procedure_name --> To execute
+
+Example 2 using parameters:
+CREATE PROCEDURE employee_gender @gender varchar(20)
+AS
+select * from employee
+where e_gender=@gender
+GO;
+
+exec e_gender @gender='Male'
+Output will be Male details
+exec e_gender @gender='Female'
+Output will be Female details
