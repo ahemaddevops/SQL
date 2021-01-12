@@ -179,3 +179,8 @@ SELECT column list FROM table1
 union
 SELECT column list FROM table2
 Combines both data with duplicate
+
+EXCEPT Operator:
+SELECT * FROM table1
+except
+SELECT * FROM table2
