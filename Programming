@@ -154,16 +154,28 @@ FROM table1
 FULL JOIN table2
 ON table1.column_x=table2.column_y;
 
-UPDATE JOIN:
+UPDATE using JOIN:
 SELECT columns
 SET Condition
 FROM table1
 JOIN table2 on table1.column_x=table2.column_y
 WHERE condition;
 
-DELETE JOIN:
+DELETE using JOIN:
 SELECT columns
 SET Condition
 FROM table1
 JOIN table2 on table1.column_x=table2.column_y
 WHERE condition;
+
+UNION Operator:
+SELECT column list FROM table1
+union
+SELECT column list FROM table2
+Combines both data without duplicate
+
+UNION All Operator:
+SELECT column list FROM table1
+union
+SELECT column list FROM table2
+Combines both data with duplicate
