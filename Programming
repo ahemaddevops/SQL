@@ -237,3 +237,7 @@ where 10>20 then '10 is greater than 20'
 where 10<20 then '10 is less than 20'
 else '10 is equal 20'
 end
+
+IIF Function:
+select columns iif(boolean_expression, true_value, false_value)
+Ex: select e_name,e_age iif(e_age>30,'Old Age','Young Age') as emp_status from table;
