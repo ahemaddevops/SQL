@@ -221,3 +221,19 @@ THEN [Insert Statement]
 WHEN NOT MATCHED BY SOURCE
 THEN [Delete Statement];
 Merges the Tables with the required data from the Source to Target 
+
+Case Statement:
+SELECT *,grade=
+case
+where condition then comment
+where condition then comment
+else comment
+end
+
+Example:
+select *,grade=
+case
+where 10>20 then '10 is greater than 20'
+where 10<20 then '10 is less than 20'
+else '10 is equal 20'
+end
