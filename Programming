@@ -184,3 +184,10 @@ EXCEPT Operator:
 SELECT * FROM table1
 except
 SELECT * FROM table2
+Results different data which doesn't match with both tables
+
+INTERSECT Operator:
+SELECT * FROM table1
+intersect
+SELECT * FROM table2
+Results different data which doesn't match with both tables
